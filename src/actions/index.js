@@ -18,6 +18,7 @@ export function loadUsers() {
   return {
     type: LOAD_USERS,
     payload: [
+      { key: index++, section: true, label: 'USERS' },
       { key: index++, label: '_TBD1 1' },
       { key: index++, label: '_TBD2 2' },
       { key: index++, label: '_TBD3 3' },
@@ -31,6 +32,7 @@ export function loadEvents() {
   return {
     type: LOAD_EVENTS,
     payload:[
+      { key: index++, section: true, label: 'EVENTS' },
       { key: index++, label: 'South Florida' },
       { key: index++, label: 'Texas State Fair' },
       { key: index++, label: 'Testing Show' }

@@ -38,7 +38,7 @@ class Initial extends Component {
             selectStyle={styles.selectStyle}
             data={this.props.users}
             initValue="SELECT USER"
-            onChange={(option)=>{ this.setState({textInputValue:option.label})}}
+            onChange={(option) => console.log(option)}
             />
           <Text style={styles.coloredText}>
             EVENT:
@@ -48,7 +48,7 @@ class Initial extends Component {
             selectStyle={styles.selectStyle}
             data={this.props.events}
             initValue="SELECT EVENT"
-            onChange={(option)=>{ this.setState({textInputValue:option.label})}}
+            onChange={(option) => console.log(option)}
             />
         </View>
 
@@ -56,7 +56,7 @@ class Initial extends Component {
           <TouchableHighlight
             underlayColor='gray'
             style={styles.buttons}
-            onPress={() => console.log('hi')}>
+            onPress={() => console.log('START SURVEY')}>
             <Text style={styles.buttonText}>
               START SURVEY
             </Text>
@@ -64,7 +64,7 @@ class Initial extends Component {
           <TouchableHighlight
             underlayColor='gray'
             style={styles.buttons}
-            onPress={() => console.log('hi')}>
+            onPress={() => console.log('CONNECT')}>
             <Text style={styles.buttonText}>
               CONNECT
             </Text>
@@ -72,7 +72,7 @@ class Initial extends Component {
           <TouchableHighlight
             underlayColor='gray'
             style={styles.buttons}
-            onPress={() => console.log('hi')}>
+            onPress={() => console.log('SHOWS SCHEDULE')}>
             <Text style={styles.buttonText}>
               SHOWS SCHEDULE
             </Text>
