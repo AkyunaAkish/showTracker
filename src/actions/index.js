@@ -6,14 +6,6 @@ import {
 import axios from 'axios';
 
 export function loadUsers() {
-  // axios.get('http://api.pixplorer.co.uk/image?word=gorillas')
-  // .then((res) => {
-  //   console.log('res', res);
-  // })
-  // .catch((err) => {
-  //   console.log('err', err);
-  // });
-
   let index = 0;
   return {
     type: LOAD_USERS,
